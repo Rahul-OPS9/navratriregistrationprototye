@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<h1>Navratri Activity Registration</h1>
+<div class="maincontent">
+      <form id="AA" target=""
+        action="https://script.google.com/macros/s/AKfycbxuPXlRqJCx5yE1bRCBrUiuQYRwYQsoxBXZf1VMQnOaPww4kgV_oM-i27JfY4ViGiI/exec"
+        method="post">
+    <div class="inputs">
+    <div><Input id="n1" name="Name" placeholder="Full Name "></Input></div>
+    <div><Input id="n2" name="RollNo" placeholder="Department"></Input></div>
+    <div><Input id="n3" name="PNR" placeholder="PNR No "></Input></div>
+    <div><Input id="n4" name="Branch" placeholder="Mobile Number"></Input></div>
+    <div><Input id="n5" name="Year" placeholder="Year" type="hidden"></Input></div>
+    <div><Input id="n6" name="Kdfd" placeholder="E-mail"></Input></div>
+    <div><Input id="n9" name="IOf" placeholder="Activity"></Input></div>
+    <div><Input id="n7" name="Kfj" type="radio" value="Solo"> Solo </Input>
+         <Input id="n8" name="Kfj" type="radio" value="Team"> Team </Input></div>
+    </div>
+    <button id="mainsend" type="submit">SUBMIT</button>
+    </form>
+</div>
+    <script>
+        a = new Date();
+        console.log(a);
+
+        const now = new Date();
+
+const year = now.getFullYear();       
+const month = now.getMonth() + 1;    //javascript start counting from 0 thats why +1 
+const day = now.getDate();          
+const time24hr = now.toLocaleTimeString('en-US');
+document.getElementById("n5").value= day+'/'+month+'/'+year+"  "+time24hr ; 
+
+console.log(`${day}/${month}/${year} ${time24hr}`);
+    function b(){
+        console.log("hello");
+    } 
+    // document.getElementById("AA").addEventListener("submit",function(e){
+    // e.preventDefault()});
+    </script>
+</body>
+</html>
